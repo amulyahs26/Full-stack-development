@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Booking Details</title>
+    <link rel="stylesheet" href="/style.css">
+</head>
+
+<body>
+    <%- include('partials/header') %>
+        <h2>All Booking Details</h2>
+        <% if (bookings.length===0) { %>
+            <p>No bookings found.</p>
+            <% } else { %>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Customer ID</th>
+                            <th>Airline</th>
+                            <th>Source</th>
+                            <th>Destination</th>
+                            <th>Date</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <% bookings.forEach(b=> { %>
+                            <tr>
+                                <td>
+                                    <%= b.customerId %>
+                                </td>
+                                <td>
+                                    <%= b.airline %>
+                                </td>
+                                <td>
+                                    <%= b.source %>
+                                </td>
+                                <td>
+                                    <%= b.destination %>
+                                </td>
+                                <td>
+                                    <%= b.date %>
+                                </td>
+                            </tr>
+                            <% }); %>
+                    </tbody>
+                </table>
+                <% } %>
+</body>
+
+</html>

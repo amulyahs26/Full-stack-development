@@ -1,0 +1,16 @@
+[
+  {
+    "airline": "Air India",
+    "source": "Bengaluru",
+    "destination": "Chennai",
+    "date": "2025-07-23",
+    "customerId": "123"
+  },
+  {
+    "airline": "Emirates",
+    "source": "Delhi",
+    "destination": "Mumbai",
+    "date": "2025-07-08",
+    "customerId": "456"
+  }
+]
